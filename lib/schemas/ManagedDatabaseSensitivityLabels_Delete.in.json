@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "properties": {
+        "resourceGroupName": {
+            "required": true,
+            "type": "string"
+        },
+        "managedInstanceName": {
+            "required": true,
+            "type": "string"
+        },
+        "databaseName": {
+            "required": true,
+            "type": "string"
+        },
+        "schemaName": {
+            "required": true,
+            "type": "string"
+        },
+        "tableName": {
+            "required": true,
+            "type": "string"
+        },
+        "columnName": {
+            "required": true,
+            "type": "string"
+        },
+        "sensitivityLabelSource": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "current"
+            ]
+        },
+        "subscriptionId": {
+            "required": true,
+            "type": "string"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

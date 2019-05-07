@@ -1,0 +1,104 @@
+{
+    "type": "object",
+    "properties": {
+        "resourceGroupName": {
+            "required": true,
+            "type": "string"
+        },
+        "managedInstanceName": {
+            "required": true,
+            "type": "string"
+        },
+        "databaseName": {
+            "required": true,
+            "type": "string"
+        },
+        "schemaName": {
+            "required": true,
+            "type": "string"
+        },
+        "tableName": {
+            "required": true,
+            "type": "string"
+        },
+        "columnName": {
+            "required": true,
+            "type": "string"
+        },
+        "sensitivityLabelSource": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "current"
+            ]
+        },
+        "subscriptionId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "allOf": [
+                {
+                    "allOf": [
+                        {
+                            "description": "ARM resource.",
+                            "properties": {
+                                "id": {
+                                    "description": "Resource ID.",
+                                    "readOnly": true,
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "description": "Resource name.",
+                                    "readOnly": true,
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "description": "Resource type.",
+                                    "readOnly": true,
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object",
+                            "x-ms-azure-resource": true
+                        }
+                    ],
+                    "description": "ARM proxy resource.",
+                    "properties": {},
+                    "type": "object"
+                }
+            ],
+            "description": "A sensitivity label.",
+            "properties": {
+                "properties": {
+                    "description": "Resource properties.",
+                    "x-ms-client-flatten": true,
+                    "properties": {
+                        "informationType": {
+                            "description": "The information type.",
+                            "type": "string"
+                        },
+                        "informationTypeId": {
+                            "description": "The information type ID.",
+                            "type": "string"
+                        },
+                        "labelId": {
+                            "description": "The label ID.",
+                            "type": "string"
+                        },
+                        "labelName": {
+                            "description": "The label name.",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

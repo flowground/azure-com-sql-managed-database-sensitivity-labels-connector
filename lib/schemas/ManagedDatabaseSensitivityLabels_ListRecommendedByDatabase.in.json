@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+        "resourceGroupName": {
+            "required": true,
+            "type": "string"
+        },
+        "managedInstanceName": {
+            "required": true,
+            "type": "string"
+        },
+        "databaseName": {
+            "required": true,
+            "type": "string"
+        },
+        "subscriptionId": {
+            "required": true,
+            "type": "string"
+        },
+        "_skipToken": {
+            "required": false,
+            "type": "string"
+        },
+        "_filter": {
+            "required": false,
+            "type": "string"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
