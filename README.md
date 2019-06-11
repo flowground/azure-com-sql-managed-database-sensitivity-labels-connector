@@ -5,7 +5,7 @@
 A generated **flow**ground connector for the SqlManagementClient API (version 2018-06-01-preview).
 
 Generated from: https://api.apis.guru/v2/specs/azure.com/sql-managedDatabaseSensitivityLabels/2018-06-01-preview/swagger.json<br/>
-Generated at: 2019-05-07T17:39:06+03:00
+Generated at: 2019-06-11T18:14:23+03:00
 
 ## API Description
 
